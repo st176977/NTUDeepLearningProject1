@@ -49,7 +49,7 @@ class PSGClsDataset(Dataset):
         num_classes=56,
     ):
         super(PSGClsDataset, self).__init__()
-        with open('./data/psg/psg_cls_basic.json') as f:
+        with open('input/dataset/data/psg/psg_cls_basic.json') as f:
             dataset = json.load(f)
         self.imglist = [
             d for d in dataset['data']
